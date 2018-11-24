@@ -1,0 +1,40 @@
+{
+  "name": "Raiting",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "satisfaccion": {
+      "type": "string"
+    },
+    "comidaSolicitada": {
+      "type": "string"
+    },
+    "numeroComensales": {
+      "type": "string"
+    },
+    "quejas": {
+      "type": "string"
+    },
+    "sugerencias": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "comensal": {
+      "type": "belongsTo",
+      "model": "Comensal",
+      "foreignKey": ""
+    },
+    "restaurant": {
+      "type": "belongsTo",
+      "model": "Restaurant",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

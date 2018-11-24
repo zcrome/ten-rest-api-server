@@ -1,0 +1,23 @@
+{
+  "name": "Restaurant",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nombre": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "raitings": {
+      "type": "hasMany",
+      "model": "Raiting",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

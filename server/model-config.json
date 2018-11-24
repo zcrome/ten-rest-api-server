@@ -34,5 +34,17 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "Comensal": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Raiting": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Restaurant": {
+    "dataSource": "db",
+    "public": true
   }
 }

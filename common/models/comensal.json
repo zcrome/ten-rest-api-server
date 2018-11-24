@@ -1,0 +1,27 @@
+{
+  "name": "Comensal",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "realm": null,
+    "username": null,
+    "emailVerified": null,
+    "verificationToken": null
+  },
+  "validations": [],
+  "relations": {
+    "raitings": {
+      "type": "hasMany",
+      "model": "Raiting",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
